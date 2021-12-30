@@ -1,0 +1,243 @@
+﻿<Window x:Class="Sreaming.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sreaming"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph TextAlignment="Center">
+                    <Hyperlink NavigateUri="https://www.autodesk.ru/products/revit/overview#revit-intro">
+                        <Span Foreground="Red" Background="Bisque" FontSize="20">
+                        <Italic>
+                            <Bold>
+                                Многопрофильное программное обеспечение на основе технологии BIM для согласованного совместного проектирования с высоким качеством
+                            </Bold>
+                        </Italic>
+                        </Span>
+                    </Hyperlink>
+                </Paragraph>
+                <Paragraph FontSize="18" FontStyle="Oblique" TextAlignment="Center">
+                    Создание совместных, согласованных и полных проектов на основе моделей
+                </Paragraph>
+                <Paragraph FontSize="14" TextAlignment="Justify">
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/3D.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    Программное обеспечение для информационного моделирования зданий (BIM) Revit® позволяет повысить эффективность и точность на протяжении 
+                    всего жизненного цикла проекта: от концептуального проектирования, визуализации и анализа до изготовления и строительства.
+                </Paragraph>
+                <List MarkerStyle="Square" FontSize="14">
+                    <ListItem>
+                        <Paragraph>
+                             Начните 3D-моделирование с высокой точностью и достоверностью.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Планы этажей, фасады и разрезы обновляются <Bold>автоматически</Bold> во время работы над моделью.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Revit позволяет
+                            <Underline>автоматизировать выполнение рутинных и повторяющихся задач</Underline>, благодаря чему вы можете сосредоточиться
+                            на более важной работе.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph FontSize="24" TextAlignment="Center">
+                    Требования к системе для программ Revit 2022
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.5*"/>
+                        <TableColumn Width="3*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow Background="LightBlue">
+                            <TableCell ColumnSpan="2">
+                                <Paragraph TextAlignment="Center">
+                                    Revit® 2022 Стоимость: сбалансированное сочетание цены и производительности
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Параметр
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Описание
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightBlue">
+                            <TableCell>
+                                <Paragraph>
+                                    Операционная система
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    64-разрядная версия Microsoft® Windows® 10 или Windows 11
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Тип центрального процессора
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Intel® i-Series, Xeon®, AMD® Ryzen, Ryzen Threadripper PRO. 2,5 ГГц или выше.
+Рекомендуется использовать процессор с самой высокой тактовой частотой.
+В программном обеспечении Autodesk® Revit® используется несколько ядер для множества задач.
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightBlue">
+                            <TableCell>
+                                <Paragraph>
+                                    Память
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    16 ГБ ОЗУ
+                                </Paragraph>
+                                <List MarkerStyle="Disc">
+                                    <ListItem>
+                                        <Paragraph>
+                                            Как правило, этого объема памяти достаточно для типового сеанса редактирования одной модели, занимающей около 300 МБ 
+                                            пространства на диске. Эта оценка базируется на результатах внутреннего тестирования и пользовательских отчетах. 
+                                            Отдельные модели имеют различные требования к производительности и ресурсам компьютера.
+                                        </Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>
+                                            Модели, созданные в предыдущих версиях программы Revit, могут потребовать дополнительного объема доступной памяти 
+                                            для единовременного обновления.
+                                        </Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Экранное разрешение
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Bold>Минимальные требования</Bold>
+                                </Paragraph>
+                                <Paragraph>
+                                    1680 x 1050 с поддержкой полноцветного режима True Color
+                                </Paragraph>  
+                                <Paragraph>
+                                    <Bold>Максимум</Bold>
+                                </Paragraph>   
+                                <Paragraph>
+                                    Монитор сверхвысокой четкости (4K)
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightBlue">
+                            <TableCell>
+                                <Paragraph>
+                                    Видеоадаптер
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Видеокарта с поддержкой DirectX 11 и Shader Model 5 и объемом видеопамяти не меньше 4 Гб
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Место на диске
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    30 ГБ свободного места на диске
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightBlue">
+                            <TableCell>
+                                <Paragraph>
+                                    Указывающее устройство
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Устройство, совместимое с MS-Mouse или 3Dconnexion
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    .NET Framework
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    .NET Framework 4.8 или более поздней версии.
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow Background="LightBlue">
+                            <TableCell>
+                                <Paragraph>
+                                    Браузер
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Microsoft Internet Explorer 10 или более поздней версии
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                        <TableRow >
+                            <TableCell>
+                                <Paragraph>
+                                    Соединение
+                                </Paragraph>                                
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    Подключение к интернету для регистрации лицензии и компонентов, необходимых для загрузки
+                                </Paragraph>                                
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Открыть" Width="100" Click="Button_Click_Open"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_Save"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click_Clear"/>
+        </StackPanel>
+    </Grid>
+</Window>

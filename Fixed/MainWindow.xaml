@@ -1,0 +1,45 @@
+﻿<Window x:Class="Fixed.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fixed"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DocumentViewer x:Name="documentV">
+            <FixedDocument>
+                <!--<PageContent>
+                    <FixedPage Width="21cm" Height="29.7cm" HorizontalAlignment="Center">
+
+                        <StackPanel>
+                            <TextBox FontSize="20" Width="19cm" Margin="10" Padding="5" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="Red">
+                                Многопрофильное программное обеспечение на основе технологии BIM для согласованного совместного проектирования с высоким качеством
+                            </TextBox>
+                            <TextBox 
+                            FontSize="16" 
+                            Width="19cm" 
+                            Margin="10" 
+                            Padding="5" 
+                            HorizontalAlignment="Center" 
+                            TextWrapping="Wrap" 
+                            Foreground="Black"
+                            FontStyle="Italic">
+                                Создание совместных, согласованных и полных проектов на основе моделей
+                            </TextBox>
+
+                        </StackPanel>
+                    </FixedPage>
+                </PageContent>-->
+            </FixedDocument>
+        </DocumentViewer>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Button Content="Сохранить" Width="100" Click="Button_Click_Save"/>
+            <Button Content="Открыть" Width="100" Click="Button_Click_Open"/>
+        </StackPanel>
+    </Grid>
+</Window>
